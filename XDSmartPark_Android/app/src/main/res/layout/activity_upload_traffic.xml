@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="org.zt.xdsmartpark.activity.UploadDynamicTrafficActivity">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp"
+    android:overScrollMode="never"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:singleLine="false"
+        android:textSize="18sp"
+        android:hint="请输入路况信息"
+        android:id="@+id/MyAdviceContent" />
+
+
+    <Button
+        android:id="@+id/MyAdviceCommit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#337ab7"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="提交"/>
+</LinearLayout>
+
+
+</LinearLayout>
+
